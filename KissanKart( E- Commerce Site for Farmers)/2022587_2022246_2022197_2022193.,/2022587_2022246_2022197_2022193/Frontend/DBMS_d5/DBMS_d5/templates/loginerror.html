@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>KissanKart</title>
+      <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+   </head>
+   <body>
+      <div class="bg-img">
+         <div class="content">
+            <header>Login</header>
+            <!-- Change form action to point to your PHP authentication script -->
+            <form action="/login" method="POST">
+               <!-- Set appropriate name for the username input -->
+               <div class="field">
+                  <span class="user"></span>
+                  <input type="text" name="username" required placeholder="Email or PhoneNo.">
+               </div>
+               <!-- Set appropriate name for the password input -->
+               <div class="field space">
+                  <span class="lock"></span>
+                  <input type="password" name="password" class="pass-key" required placeholder="Password">
+                  <span class="show">SHOW</span>
+               </div>
+               <div class="pass">
+                  <a href="#">Forgot Password?</a>
+               </div>
+               <div class="field">
+                  <input type="submit" value="LOGIN">
+               </div>
+            </form>
+            <div class="login">
+               Or login with
+            </div>
+            <div class="links">
+               <div class="facebook">
+                  <i class="facebook"><span>Facebook</span></i>
+               </div>
+               <div class="gmail">
+                  <i class="gmail"><span>Gmail</span></i>
+               </div>
+            </div>
+            <div class="signup">
+               Don't have an account?
+               <a href="signup.html">Signup Now</a>
+            </div>
+            <div class="err">
+               Invalid Username or password
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

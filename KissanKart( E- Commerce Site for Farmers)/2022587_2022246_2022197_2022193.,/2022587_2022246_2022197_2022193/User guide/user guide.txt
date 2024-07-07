@@ -1,0 +1,69 @@
+1. Signup:
+Description: Allows new users to create an account on the platform.
+Working:
+Click on the "Signup Now" button on the login page.
+Fill in the required information such as username, email, phone no. and password.
+Click on the "Signup" button to create your account.
+Now the new user is added to the database.
+
+2. Signup Error:
+Description: Displays error messages if there are any issues during the signup process.
+Working:
+If any errors occur during signup, an error message will be displayed, prompting you to correct the errors and resubmit the form.
+
+3. Login HTML:
+Description: Provides the HTML interface for users to log into their accounts.
+Working:
+Visit the login page.
+Enter your phone no./email and password.
+Click on the "Login" button.
+
+4. Login Error:
+Description: Displays error messages if there are any issues during the login process.
+Working:
+If login credentials are incorrect or there are any other errors, an error message will be displayed, and then resubmit the details again.
+
+5. Forgot Password:
+Description: Allows users to reset their passwords if forgotten.
+Working:
+Click on the "Forgot Password" link on the login page.
+Enter your email address and phone number for verification of the user.
+after successful verification, the user will be directed to the reset_passowrd page.
+
+6. Forgot Password Error:
+Description: Displays error messages if user verification is invalid.
+Working:
+If there is an error due to an invalid user, then the user has to resubmit the details again for verification.
+
+7. Reset Password:
+Description: Enables users to set a new password after initiating a password reset.
+Working:
+enter the new password and then confirm that new password, and then click on the reset password button. Now the password is reset and is also changed in the database as well. 
+
+8. Home Page:
+Description: The main landing page of the website provides an overview of featured products and navigation to other sections of the site.
+Working:
+Upon logging in or visiting the website, you will be directed to the home page automatically. Here u can see various products and can directly add the products using the "+" sign. The products will be added to the shopping cart. There are various navigation tabs as well, like login, home, about, contact, and shopping cart. The user can redirect to these pages by clicking these tabs.
+
+9. Shopping Cart:
+Description: Allows users to store the products in the cart for later purchase.
+Working:
+On the home page, click on the cart shape icon. Then the user will be able to see the product the user has added. The user has the option either to clear the entire cart or remove an individual product. Accordingly, the total bill is shown at the top. Then, for the purchase of the product, click on the checkout button.
+
+11. Checkout:
+Description: Allows users to complete the purchase of the product.
+Working:
+On the shopping cart page, after clicking the checkout button, a message will be shown that your order has been placed, and the user can return to the home page.
+
+12.Update_product_availability_trigger:
+Description: The trigger automatically updates the availability of a product in the database whenever an item is ordered and added to the shopping cart.
+Working:
+When an item is ordered and added to the shopping cart, the trigger is activated.
+It decreases the availability of the ordered product by the quantity ordered.
+This ensures that the availability of products is accurately reflected in the database in real time, preventing over-ordering of out-of-stock items.
+
+13. Before_insert_shopping_cart_trigger:
+Description: This trigger executes before inserting a new record into the ShoppingCart table.
+Working:
+It checks the available quantity of the product being added to the shopping cart.
+If the available quantity is less than the quantity being added, it raises an error, preventing the insertion of the record.

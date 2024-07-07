@@ -1,0 +1,47 @@
+﻿CSE202: Fundamentals of Database Management Systems 
+KisanKart: Cultivating Convenience Harsh Hingorani (2022197), Keshav Bindlish (2022246), Yash Garg  (2022587), Hardik Sachdeva (2022193) 
+1.1 Project Scope 
+The project focuses on developing a mobile application tailored for the streamlined delivery of agricultural tools  and supplies to farmers, aiming to overcome the accessibility challenges faced by the agricultural community.  This comprehensive app will consist of two distinct interfaces: one catering to buyers (farmers) and the other  designed for sellers. Buyers can effortlessly register, select products, view fixed prices, and receive real-time  updates on their deliveries. On the seller side, the application provides a platform for registration, enabling  sellers to list products with detailed information and efficiently manage their inventory. The backend  infrastructure will leverage technologies such as Python, Django, and MySQL, while the frontend will be crafted  using HTML, CSS, JavaScript, and ReactJS. Additionally, the integration of the Google Maps API will ensure  precise location tracking. 
+Key features include secure transaction handling, robust notifications, and seamless order processing. The  success criteria encompass achieving high user satisfaction, optimizing order processing efficiency, and  encouraging increased product listings by sellers. Regular milestone reviews will be conducted throughout the  project. Assumptions are made regarding sellers adhering to product listing guidelines. Overall, the project  seeks to create a user-friendly and transparent platform, fostering connections between farmers and essential  supplies, while empowering sellers to showcase their agricultural products effectively. 
+The application's front end will be developed using HTML, CSS, JavaScript, and ReactJS, while the backend  will be implemented using Python, MySQL, and Django. 
+1.2 Tech Stack 
+1. MySQL 
+2. Python 
+3. Django 
+4. HTML 
+5. CSS 
+6. ReactJS 
+7. Google Maps API 
+8. JavaScript
+CSE202: Fundamentals of Database Management Systems 
+1.3 Functional Requirements 
+1. User Management 
+a. Login - The credentials should exactly match the credentials the user provided while signing  up 
+b. Signup - Creating a new account while ensuring that one email address will be linked to only  one account 
+c. Profile settings 
+i. The user can change their name 
+ii. The user can change their profile picture 
+iii. The user can change the email address linked to their profile 
+d. Sign Out 
+e. Place Order 
+i. Select Product type and quantity 
+ii. Enter discount codes and coupons 
+iii. Enter drop-off location 
+iv. Select payment type 
+v. Track Order 
+vi. Order History 
+2. Product Management 
+a. Product details 
+b. Product ratings and feedback 
+c. Product availability 
+3. Warehouse Management 
+a. Warehouses would be maintained for smoother transportation  
+4. Delivery Fare Calculation 
+a. Calculated based on distance (Rs x per kilometre) 
+5. Route Management 
+a. Real-time route tracking 
+b. Warehouse allocation based on distance and time 
+6. Web Interface 
+a. User-friendly and interactive user interface to ease the process of placing order. 
+CONTRIBUTION: All the members contributed equally to the assignment. 
+CREDITS: we used chatgpt to rephrase the project scope our group members came up with.

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>KissanKart</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/signup.css') }}">
+</head>
+<body>
+<div class="bg-img">
+    <div class="content">
+        <header>Register</header>
+        <form action="/signuptesting" method="POST">
+            <div class="field">
+                <span class="user"></span>
+                <input type="text" name="name" required placeholder="Name">
+            </div>
+            <div class="field">
+                <span class="user"></span>
+                <input type="email" name="email" required placeholder="Email ID">
+            </div>
+            <div class="field">
+                <span class="user"></span>
+                <input type="text" name="phone" required placeholder="Phone No.">
+            </div>
+            <div class="field">
+                <span class="lock"></span>
+                <input type="password" name="password" class="pass-key" required placeholder="Password">
+                <span class="show">SHOW</span>
+            </div>
+
+            <div class="field space" id="signup">
+                <input type="submit" value="Signup">
+            </div>
+        </form>
+        <div class="signup">
+            Or Signup With
+        </div>
+        <div class="links">
+            <div class="facebook">
+                <i class="facebook"><span>Facebook</span></i>
+            </div>
+            <div class="gmail">
+                <i class="gmail"><span>Gmail</span></i>
+            </div>
+        </div>
+        <div class="login">
+            Already have an account?
+            <a href="/login">Login Now</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

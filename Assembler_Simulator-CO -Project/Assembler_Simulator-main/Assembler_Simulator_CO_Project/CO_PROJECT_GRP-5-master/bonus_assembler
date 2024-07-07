@@ -1,0 +1,51 @@
+opcodes = {
+    "parabola": ["10100", "A"],
+    "expo": ["10111", "A"],
+    "art": ["10101", "A"],
+    "arr": ["10101", "A"],
+    "hypo": ["10011", "A"]
+}
+
+def get_register_binary(register):
+    register_number = int(register[1:])
+    register_binary = format(register_number, '03b')
+    return register_binary
+
+def generate_instruction(opcode, registers):
+    try:
+        instruction_type = opcodes[opcode][1]
+        opcode_binary = opcodes[opcode][0]
+    except KeyError:
+        return ''  # Ignore the opcode and return an empty string
+
+    reg1 = get_register_binary(registers[0])
+    reg2 = get_register_binary(registers[1])
+    reg3 = get_register_binary(registers[2])
+
+    if instruction_type == "A":
+        instruction_binary = opcode_binary + "00" + reg1 + reg2 + reg3
+    else:
+        # Handle other instruction types if needed
+        pass
+
+    return instruction_binary
+
+
+# Read test cases from input file
+with open("input.txt", "r") as file:
+    test_cases = file.readlines()
+
+# Process test cases and generate output
+output_lines = []
+for test_case in test_cases:
+    test_case = test_case.strip()
+    parts = test_case.split()
+    opcode = parts[0]
+    registers = parts[1:]
+    instruction_binary = generate_instruction(opcode, registers)
+    output_lines.append(instruction_binary)
+
+# Write output to output file
+with open("output.txt", "w") as file:
+    file.write("\n".join(output_lines))
+    file.write("1101000000000000")

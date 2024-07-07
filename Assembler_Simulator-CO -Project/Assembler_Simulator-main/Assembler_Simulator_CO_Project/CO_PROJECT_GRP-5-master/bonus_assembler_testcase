@@ -1,0 +1,6 @@
+parabola R0 R1 R2
+expo R1 R5 R2
+art R2 R3 R4
+arr R3 R4 R5
+parabola R4 R5 r6 
+hlt

@@ -1,0 +1,16 @@
+org\example\StatisticsInterface.class
+org\example\VisitorInterface.class
+org\example\OwnersInterface.class
+org\example\Amphibian.class
+org\example\Attraction.class
+org\example\Owners.class
+org\example\Admin.class
+org\example\Discount.class
+org\example\Main.class
+org\example\Mammal.class
+org\example\AnimalManagementInterface.class
+org\example\Visitor.class
+org\example\AttractionManagementInterface.class
+org\example\Animal.class
+org\example\Reptile.class
+org\example\integer.class
